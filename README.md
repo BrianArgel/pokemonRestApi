@@ -7,13 +7,13 @@
 ## Install Backend
 
 ```sh
-npm instal
+npm install
 ```
 
 ## Install Frontend
 
 ```sh
-yarn instal
+yarn install
 ```
 
 ## Author

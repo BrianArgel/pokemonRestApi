@@ -6,15 +6,14 @@ import { useNavigate } from "react-router-dom/dist";
 import { useFormik } from "formik";
 import { LoginValidate } from "@/utils/validateForm";
 import { useNotification } from "@/context/notification.context";
-import { NOTIFY_TYPES } from "@/const";
-import { GENERAL_SUCCESS } from "@/const";
+import { NOTIFY_TYPES, GENERAL_SUCCESS } from "@/const";
 
 export const LoginContainer = () => {
-  const { 
+  const {
     error,
     success,
     accessToken,
-    loading 
+    loading
   } = useAppSelector((state) => state.authReducer);
   const { notify } = useNotification();
   const [inputType, TogglePasswordIcon] = usePasswordToggle();
@@ -32,14 +31,21 @@ export const LoginContainer = () => {
     },
   });
 
+  /**
+   * Effect for handling and displaying error notifications when the 'error' state changes.
+   */
+
   useEffect(() => {
     if (error) notify(error, NOTIFY_TYPES.ERROR);
   }, [error]);
 
+  /**
+   * Effect for handling success notifications and navigation when the 'accessToken' state changes.
+   */
 
   useEffect(() => {
     if (accessToken) {
-      if(success) notify(GENERAL_SUCCESS.MESAGE, NOTIFY_TYPES.SUCCESS);
+      if (success) notify(GENERAL_SUCCESS.MESAGE, NOTIFY_TYPES.SUCCESS);
       navigate("/");
     }
   }, [accessToken]);

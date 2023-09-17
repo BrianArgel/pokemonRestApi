@@ -26,7 +26,7 @@ export const NOTIFY_TYPES = {
 /*------------------------*/
 
 export const GENERAL_ERROR = {
-  MESAGE: "Opps ha ocurrido un error"
+  MESAGE: "Opps an error has occurred"
 }
 
 /*------------------------*/

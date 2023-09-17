@@ -4,16 +4,16 @@
 
 > Practical test on how to consume a Pokémon API using good practices
 
-## Install
+## Install Backend
 
 ```sh
-Backend npm instal, Frontend yarn install
+npm instal
 ```
 
-## Run tests
+## Install Frontend
 
 ```sh
-yarn run test
+yarn instal
 ```
 
 ## Author

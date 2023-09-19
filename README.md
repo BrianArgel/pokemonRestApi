@@ -20,7 +20,7 @@ yarn install
 
 👤 **Brian Argel Ponce**
 
-* Github: [@Brian Argel Ponce](https://github.com/Brian Argel Ponce)
+* Github: [@Brian Argel Ponce](¿https://github.com/BrianArgel)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/brianargel\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/brianargel\/)
 
 ## Show your support
